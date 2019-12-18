@@ -1,0 +1,10 @@
+Assumptions regarding POIs:
+The popularity of POIs depends on distance from the requests and the type of POI.
+
+testing steps:
+1. Obtain POIs popularity data and create binary label as 1, 0. 1 represents popular and 0 represents not.
+2. Feature engineering. We normalize the distance with 0-1, and assign different type of POI as some integer numbers.
+3. Calculate the correlation matrix, KL-divergence to see whether our assumption is corrent.
+
+conclusions:
+The popularity of POIs depends(or not) on distance from the requests and the type of POI.

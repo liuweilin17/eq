@@ -13,11 +13,15 @@ Docker compose is a tool for defining and running multi-container Docker applica
 Notice the spark version is ```version 2.4.1``` with command ```spark-submit --version```
 
 4.Go into the container shell (master/work)
-```docker exec -it ws-data-spark_master_1_master_1 /bin/bash
-docker exec -it ws-data-spark_master_1_worker_1 /bin/bash```
+```
+docker exec -it ws-data-spark_master_1_master_1 /bin/bash
+docker exec -it ws-data-spark_master_1_worker_1 /bin/bash
+```
 Notice that there is no editor in the container, install Vim:
-```apt-get update
-apt-get install vim```
+```
+apt-get update
+apt-get install vim
+```
 
 ### 1. Cleanup
 ```CleanUp.py``` is in ```eq/data-spark/data/tools```.

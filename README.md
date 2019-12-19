@@ -49,21 +49,34 @@ The output of average and standard deviation is ```AvgDevPio.csv``` and ```Circl
 
 **Definition**
 $N$ is the number of time span
+
 $t_i$ is the i-th time span, $i=1,...,N$
+
 $a_i$ is the total number requests in time span $t_i$
+
 $M$ is the number of POI points
+
 $b_i$ is the i-th POI point, $i=1,...,M$
+
 $c_i^j$ is the number of requests of POI $b_i$ in time span $t_j$
+
 $Pr_i^j$ is the ratio of requests of POI $b_i$ in time span $t_j$
+
 $\hat{Pr_i^j}$ is the smoothed $Pr_i^j$
+
 $Po_i^j$ is the popularity of POI $b_i$ in time span $t_j$
 
 **Model**
 Given we now assume there is just one POI. Then the popularity of the POI $b_i$ in each time span $t_j$ is:
+
 $Pr_i^j = \frac{c_i^j}{a_j}$, $a_j \neq 0$
-Then we apply smoothed kernel method with kernel function as $f(x)$ and $\hat{Pr_i^j}$ becomes:
+
+Then we apply smoothed kernel method with kernel function as$f(x)$ and $\hat{Pr_i^j}$ becomes:
+
 $\hat{Pr_i^j} = \frac{\sum_{k=1}^N Pr_i^k \cdot f(t_k - t_j)}{\sum_{k=1}^{N}f(t_k-t_j)}$
+
 Finally we normalize $\hat{Pr_i^j}$ from -10 to 10, as following:
+
 $Po_i^j = \hat{Pr_i^j} * 20 - 10$
 
 **Bonus**

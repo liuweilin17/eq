@@ -20,7 +20,7 @@ Notice that there is no editor in the container, install Vim:
 apt-get install vim```
 
 ### 1. Cleanup
-```CleanUp.py``` is in ```eq/ws-data-spark/data/tools```.
+```CleanUp.py``` is in ```eq/data-spark/data/tools```.
 Run ```spark-submit CleanUp.py``` in ```/tmp/data/tools``` on spark to remove records with identical ```geoinfo``` and ```timest```.
 The output file is ```/tmp/data/DataSampleClean.csv``` on spark.
 

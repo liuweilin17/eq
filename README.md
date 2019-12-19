@@ -74,6 +74,7 @@ $\hat{Pr_i^j}$ is the smoothed $Pr_i^j$
 $Po_i^j$ is the popularity of POI $b_i$ in time span $t_j$
 
 **Model**
+
 Given we now assume there is just one POI. Then the popularity of the POI $b_i$ in each time span $t_j$ is:
 
 $Pr_i^j = \frac{c_i^j}{a_j}$, $a_j \neq 0$
@@ -87,6 +88,7 @@ Finally we normalize $\hat{Pr_i^j}$ from -10 to 10, as following:
 $Po_i^j = \hat{Pr_i^j} * 20 - 10$
 
 **Bonus**
+
 Some reasonable hypotheses regarding POIs as well as assumptions, testing steps and conclusions are included in the file ```bonus.txt```.
 
 #### 4b. Pipeline Dependency

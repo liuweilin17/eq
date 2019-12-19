@@ -41,13 +41,20 @@ The output of average and standard deviation is ```AvgDevPio.csv``` and ```Circl
 
 ### 4. Data Science / Engineering Tracks
 #### 4a. Model
-**DataSet:** We need to have the historical request data within a timespan to analyze the popularity of each POI.
+**DataSet:** 
 
-**Preprosessing** We need to remove the requests with same time and geo info as in the ```Cleanup``` part.
+We need to have the historical request data within a timespan to analyze the popularity of each POI.
 
-**Assumption** We assume the popularity depends on the number of requests to the POI out of the number of all the requests within a certain time span. In the same time, we need to divide the time in the dataset into several time span with the same length.
+**Preprosessing** 
+
+We need to remove the requests with same time and geo info as in the ```Cleanup``` part.
+
+**Assumption**
+ 
+We assume the popularity depends on the number of requests to the POI out of the number of all the requests within a certain time span. In the same time, we need to divide the time in the dataset into several time span with the same length.
 
 **Definition**
+
 $N$ is the number of time span
 
 $t_i$ is the i-th time span, $i=1,...,N$
